@@ -21,4 +21,10 @@ public class ToDoService {
     public ToDo createToDo(ToDo newToDo) {
         return toDoRepository.save(newToDo);
     }
+
+    public void deleteToDo(long id) {
+        toDoRepository.deleteById(id);
+    }
+
+
 }
